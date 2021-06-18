@@ -35,8 +35,6 @@ RCT_EXPORT_METHOD(preload:(nonnull NSArray<FFFastImageSource *> *)sources)
     [[SDWebImagePrefetcher sharedImagePrefetcher] prefetchURLs:urls];
 }
 
-@end
-
 RCT_EXPORT_METHOD(clearMemoryCache:(RCTPromiseResolveBlock)resolve reject:(RCTPromiseRejectBlock)reject)
 {
     [SDImageCache.sharedImageCache clearMemory];
